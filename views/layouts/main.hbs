@@ -9,10 +9,14 @@
     {{!-- get fontawesome css cdn --}}
 </head>
 <body>
+    {{> _header}}
+    {{> _add_btn}}
     <div class="container">
     {{{body}}}
-
     </div>
      {{!-- add materilize js cdn --}}
+     <script>
+         M.Sidenav.init(document.querySelector('.sidenav'))
+     </script>
 </body>
 </html>

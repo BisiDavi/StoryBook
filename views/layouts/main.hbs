@@ -15,8 +15,14 @@
     {{{body}}}
     </div>
      {{!-- add materilize js cdn --}}
+     {{!-- add ck editor cdn --}}
      <script>
-         M.Sidenav.init(document.querySelector('.sidenav'))
+       M.Sidenav.init(document.querySelector('.sidenav'))
+       M.FormSelect.init(document.querySelector('#status'))
+
+    CKEDITOR.replace('body, {
+        plugins: 'wysiwygarea','toolbar', 'wyincs', 'menu'
+    })
      </script>
 </body>
 </html>
